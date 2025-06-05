@@ -17,7 +17,7 @@ RUN apk add --no-cache \
     pixman-dev
 
 # Copy package files
-COPY package.json yarn.lock* package-lock.json* ./
+COPY package.json engine-requirements.js yarn.lock* package-lock.json* ./
 
 # Install dependencies
 RUN if [ -f yarn.lock ]; then yarn install --frozen-lockfile; \
