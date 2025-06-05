@@ -9,6 +9,7 @@ RUN apk add --no-cache \
     python3 \
     make \
     g++ \
+    git \
     cairo-dev \
     jpeg-dev \
     pango-dev \
